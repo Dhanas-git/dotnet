@@ -1,0 +1,58 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:50095",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchUrl": "http://localhost:50095",
+      "environmentVariables": {
+        "Certs__Inovalon": "MIIDqTCCApGgAwIBAgIQTwUPaLb665dE++nLdnqU4zANBgkqhkiG9w0BAQUFADBI MRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxGzAZBgoJkiaJk/IsZAEZFgttZWRhc3N1 cmFudDESMBAGA1UEAxMJbWFid3ZtaXQ0MB4XDTA5MDczMTEzNDM1NloXDTIwMDcz MTEzNTQyMFowSDEVMBMGCgmSJomT8ixkARkWBWxvY2FsMRswGQYKCZImiZPyLGQB GRYLbWVkYXNzdXJhbnQxEjAQBgNVBAMTCW1hYnd2bWl0NDCCASIwDQYJKoZIhvcN AQEBBQADggEPADCCAQoCggEBAKlcQqXDFAP/P4+8TvVbgr5Md16ljNspawA0iz9h 52kgvjQydA81vDMv3U/p6lHsNDLN45qWQPWth/kPCslRWYLEo+V25UpyIDXD1Z80 GENR2es022T/EPLb5YCczbsdtH2FNudIltdU+aTQSd/7FQ6BMnQ1zcFBfa0hck/c Sk36nTfd5mMNtX919nsx6m+Q0MXrK8pttu3zkMGw945MiQQglPJtH4tNqhtrdp0G Nvi1ZgyrsBTPKrQgV+2mqodB5/D71+vitASFPYqDbijgpNxnkCtM2CX4HRarAwfY srNFMJb8x2rTaJhrcigwBqsNkMxKIZjRurLsJf+j7KkyVIUCAwEAAaOBjjCBizAT BgkrBgEEAYI3FAIEBh4EAEMAQTALBgNVHQ8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB /zAdBgNVHQ4EFgQU/bmpLl+0Ti8oPztQCqc/Z+2OLtowEgYJKwYBBAGCNxUBBAUC AwUABjAjBgkrBgEEAYI3FQIEFgQUWe7DGoa564oC4olHaYGjqWaqnoowDQYJKoZI hvcNAQEFBQADggEBAFmVBeAg23i10mVnG+YHtS40CNQdyWApusQOai4FjWBT0Dcx FsyQPLqoXcBqyjUZP0ng3MlwH27yL4svfuEgPHjpCw1YF92sNUkKqi75apjNQj/3 a/ixVKJxc5BGt82UZ3CIAFW3eXzvjspvPSVysg/baALBdLBkPjxAAqG7z0ROl0+Q oIYFgUR015ohZXXoEqL8N+NOY3EIwIIicJtjnyi3TuKwQYXx749+3oBUSJQWiZq6 SizDkmGafdf1si4Cgm9Me/+pw94QdCH/66AdkYibWtBHm9S0fAPUEKQ8dV0LLNc8 S3R5ASXpqJzOqbrUknHZdnzVv7PiXw8MnPykCZg=",
+        "StonebranchUri": "http://hdpdevstonebr1:8080/opswise/resources/",
+        "ClientIAMCustomerManagementTimeout": "30",
+        "ClientJsonManagerTimeout": "30",
+        "StonebranchPassword": "stonebr",
+        "IAMCustomerManagementUri": "http://orchestration-jsonmanager-qa.apps.rs-nonprod-int2-pcf.medassurant.local/api/customermanagement/",
+        "RouterUri": "https://xlrouter-dev.apps.rs-nonprod-int2-pcf.medassurant.local/router/",
+        "BatchAnalyticsUri": "http://batchtaorchestrator-dev.apps.rs-nonprod-int2-pcf.medassurant.local/",
+        "FinishTask": "Finish_Analytics_Run",
+        "ClientRouterTimeout": "30",
+        "FlowchartSinkStatusUri": "http://flowchartsinkorchestrator-dev.apps.rs-nonprod-int2-pcf.medassurant.local/",
+        "StonebranchUser": "stonebr",
+        "DischargeSinkStatusUri": "http://taorchestrator-dev.apps.rs-nonprod-int2-pcf.medassurant.local/DISCHARGE-SINK/",
+        "EventSinkStatusUri": "http://eventsinkorchestrator-dev.apps.rs-nonprod-int2-pcf.medassurant.local/",
+        "JsonManagerUri": "https://orchestration-jsonmanager-core-dev.apps.rs-nonprod-int2-pcf.medassurant.local/api/",
+        "ClientFlowchartSinkTimeout": "30",
+        "ClientAnalyticsEngineTimeout": "30",
+        "CacheDBPercentageContribution": "30",
+        "ClientEventSinkTimeout": "30",
+        "ClientCloudFoundryTimeout": "30",
+        "AnalyticsEngineUri": "http://bigdataservices.qa.inovalon.com/AnalyticsServices/WorkflowRestService.svc/",
+        "CfClientUri": "http://cf-client.apps.az-nonprod-pcf.inovalon.com/v2/applications",
+        "CacheDBTaskFilter": "_CacheDB__",
+        "ClientBatchAnalyticsTimeout": "30",
+        "ReportingServicesUri": "http://localhost:54851/ReportingServices.svc/rest/",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "StatusAPIMethod": "process/status",
+        "CacheDBPredecessor": "Stop_TA_Containers",
+        "ClientStonebranchTimeout": "30",
+        "ClientReportingServicesTimeout": "86400",
+        "TAOrchestrationUri": "http://taorchestrator-dev.apps.rs-nonprod-int2-pcf.medassurant.local/BatchTA/",
+        "TAPercentageContribution": "60",
+        "PreTAPercentageContribution": "10",
+        "TAApplications": "BatchTA-DEV, EventSink-Dev, FlowchartSink-Dev, ",
+        "DataExtractionUri": "http://bigdataservicesqa.inovalon.com/DataExtractionServices/DataExtractionServices.svc/rest/",
+        "ClientDataExtractionTimeout": "1",
+        "MrePlusEventsFolderName": "events",
+        "MrePlusDischargesFolderName": "discharges",
+        "SummaryAPIMethod": "process/summary",
+        "BatchFailThresholdPercentageLimit": "10"
+      }
+    }
+  }
+}

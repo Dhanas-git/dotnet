@@ -1,0 +1,39 @@
+﻿---
+applications:
+- buildpack: dotnet_core_buildpack-v2-1-4
+  memory: 1gb
+  disk_quota: 1gb
+  env:
+    ASPNETCORE_ENVIRONMENT: Development
+    DOTNET_CLI_TELEMETRY_OPTOUT: 1
+    DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+    AnalyticsEngineUri: http://bigdataservices.dev.inovalon.com/AnalyticsServices/WorkflowRestService.svc/
+    BatchAnalyticsUri: http://batchtaorchestrator-dev.apps.rs-nonprod-int2-pcf.medassurant.local/
+    CacheDBPredecessor: Stop_TA_Containers    
+    CacheDBPercentageContribution: 30
+    CacheDBTaskFilter: _CacheDB__
+    CfClientUri: http://cfclient-dev.apps.rs-nonprod-int2-pcf.medassurant.local/v2/applications 
+    ClientAnalyticsEngineTimeout: 30
+    ClientBatchAnalyticsTimeout: 30
+    ClientCloudFoundryTimeout: 30
+    ClientEventSinkTimeout: 30
+    ClientFlowchartSinkTimeout: 30  
+    ClientJsonManagerTimeout: 30
+    ClientReportingServicesTimeout: 86400
+    ClientRouterTimeout: 30
+    ClientStonebranchTimeout: 30    
+    EventSinkStatusUri: http://eventsinkorchestrator-dev.apps.rs-nonprod-int2-pcf.medassurant.local/
+    FinishTask: Finish_Analytics_Run  
+    FlowchartSinkStatusUri: http://flowchartsinkorchestrator-dev.apps.rs-nonprod-int2-pcf.medassurant.local/   
+    IAMCustomerManagementUri: http://orchestration-jsonmanager-dev.apps.rs-nonprod-int2-pcf.medassurant.local/api/customermanagement/
+    JsonManagerUri: http://orchestration-jsonmanager-dev.apps.rs-nonprod-int2-pcf.medassurant.local/api/   
+    PreTAPercentageContribution: 10
+    ReportingServicesUri: http://bigdataservicesdev.inovalon.com/ReportingServices/ReportingServices.svc/rest/
+    RouterUri: http://xlrouter-dev.apps.rs-nonprod-int2-pcf.medassurant.local/router/
+    StonebranchUri: http://hdpdevstonebr1.medassurant.local:8080/opswise/resources/
+    StonebranchUser: stonebr
+    StonebranchPassword: stonebr
+    TAPercentageContribution: 60
+    TAApplications: "BatchTA-Dev, EventSink-Dev, FlowchartSink-Dev"    
+  routes:
+  - route: orchestration-tasks-dev.apps.rs-nonprod-int2-pcf.medassurant.local

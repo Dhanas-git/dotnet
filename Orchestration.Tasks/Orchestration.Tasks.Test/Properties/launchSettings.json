@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Orchestration.Tasks.Test": {
+      "commandName": "Project"
+    }
+  }
+}
